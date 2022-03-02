@@ -1,14 +1,14 @@
 
-# *in Python 3 reduce() isn't a built-in function anymore, and it can be found in the functools module
+# in Python 3 reduce() isn't a built-in function anymore, and it can be found in the functools module
 from functools import reduce
 
-# *!REDUCE ---> ONE VALUE FROM ALL
-# *!reduces effort
+#! REDUCE ---> ONE VALUE FROM ALL
+#! reduces effort
 
-#*! The syntax is : reduce(function, sequence[, initial])
+#! SYNTAX : reduce(function, sequence[, initial])
 
-# *? unlike map and reduce function which return a new list based on the function and iterable we've passed.
-# *? reduce function returns a single value computed
+#? unlike map and reduce function which return a new list based on the function and iterable we've passed.
+#? reduce function returns a single value computed
 
 list2 = ["abc", "klm", "def"]
 maxl = reduce(lambda a, b:a if a>b else b, list2)
