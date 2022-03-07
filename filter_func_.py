@@ -35,13 +35,10 @@ numbers = list(map(int , number))
 print(numbers)
 
 # TODO : RETURN SQUARE
-def sq (a) :
-    return a*a
-
 num = [1,2,3,4,5,6,7,-1,0.5]
 
 #?  here filter func returns the items of the list for which the function conditions satisfy
-square  = list(filter(sq , num))
+square  = list(filter(lambda a:a*a , num))
 print(square)
 
 # TODO : RETURN LENGTH
